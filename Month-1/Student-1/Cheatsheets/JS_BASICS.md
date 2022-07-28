@@ -382,8 +382,11 @@ delete userName.profession; // Удалить объект
 ```js
 let objectOne = new Object(); // синтаксис “конструктор объекта” 
 let objectTwo = {}; // синтаксис “литерал объекта”
+```
 
 Вывод данных из объекта где ключ - строка:
+
+```js
 const userInfo = {
     name : 'Bob',
     age : '18',
@@ -392,8 +395,11 @@ const userInfo = {
 };
 
 console.log(userInfo["My car"]);
+```
 
 Вывод данных объект в объекте:
+
+```js
 let user = {
     name : 'Bob',
     age : '18',
