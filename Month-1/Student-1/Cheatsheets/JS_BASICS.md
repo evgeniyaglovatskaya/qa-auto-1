@@ -197,7 +197,7 @@ nameFunction(); // Вызов функции где угодно и скольк
 
 ### Function Expression
 
-Функцию можно создать и присвоить переменной как самое обычное значение
+Функцию можно создать и присвоить переменной как самое обычное значение.
 
 ```js
 const functions = function(){
@@ -211,7 +211,7 @@ functions();
 ### Параметры и аргументы для функции   (добавить разъяснительную картинку)
 
 В функции мы указываем какой параметр необходим для выполнения, что нужно передать в функцию и потом обработать внутри функции
-При вызове функции мы передаем аргументы функции
+При вызове функции мы передаем аргументы функции.
 
 ```js
 function findElement (parameterName){
@@ -224,7 +224,7 @@ nameFunction('Registration page');
 ```
 ### Стрелочные функции - arrow function
 
-Синтаксис стрелочный функций (arrow function):
+Синтаксис стрелочной функций (arrow function):
 
 ```js
 (argument1, argument2, ... argumentN) => {
@@ -265,3 +265,177 @@ function test (parametrName1, parametrName2, parametrName3){
 ```
 
 ## Занятие 4 - Массивы (Arrays) и Циклы
+
+Структура данных
+Kак выглядят переменные:
+
+```js
+const automobile1 = 'BMW';
+const automobile2 = 'Mercedes';
+const automobile3 = 'Volvo';
+const automobile4 = 'Volkswagen';
+```
+Как выглядит массив:
+
+```js
+const allCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen'];
+console.log(allCars);
+```
+
+Порядок массива:
+```js
+index 0 - BMW
+index 1 - Mercedes
+index 2 - Volvo
+index 3 - Volkswagen
+```
+
+```js
+console.log(allCars[0]); // Вывести один элемент из массива
+console.log(allCars.length); // Определение длины массива
+```
+
+### Методы массивов
+
+```js
+allCars.push(...items) - Добавить элемент в конец массива
+.pop() - Удалить элемент из конца массива
+.shift() - Удалить элемент из конца массива
+.unshift(...items) - Добавить элемент в начало массива
+.splice([start]), ([deleteCount, newElements])
+.includes - проверить содержит ли массив элемент
+.length - длинна массива
+```
+
+### Циклы
+
+let i = 0;  - присваиваем начальное значение переменной " начальный счетчик" - i
+i < 10; - условие по которому цикл будет выполнять
+i++ - итератор, как будет i изменяться после каждой единицы "будет увеличиваться"
+
+```js
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+```
+
+### Обход массива циклом for
+
+```js
+const allGermanCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen', 'Toyota'];
+```
+
+Перебор массива циклом:
+
+```js
+for (let i = 0; i < allGermanCars.length; i++) {
+    console.log(allGermanCars[i]);
+};
+```
+
+### Обход массива циклом for (of)
+
+const allBritishCars = ['Jaguar', 'ROLLS-ROYCE', 'ASTON MARTIN', 'Bentley', 'Land Rover'];
+
+
+Запись с массива в переменную item: 
+
+```js
+for (let item of allBritishCars){
+    console.log(item);
+}
+
+const allItalianCars = ['Pagani', 'Mazzanti', 'Ferrari', 'Lamborghini', 'Maserati']; // Перебор массива с условием
+```
+Пример - функции которая проверяет и возвращает определенное значение массива
+
+```js
+const assert = searchForCar('Pagani');
+console.log(assert);
+
+function searchForCar(nameAuto){
+    for (let item of allItalianCars) {
+    if(item.includes(nameAuto)){
+        let auto = item;
+        return auto;     
+    }   
+}
+};
+```
+
+# Занятие 5 - Объекты
+
+```js
+const userName = {
+    name : 'Bob',
+    age : '18',
+    flat : 'yes'
+};
+```
+
+```js
+console.log(userName); or console.log(userName.name); // Вывод данных из объекта
+userName.profession = 'true'; // Добавить объект
+delete userName.profession; // Удалить объект
+```
+
+```js
+let objectOne = new Object(); // синтаксис “конструктор объекта” 
+let objectTwo = {}; // синтаксис “литерал объекта”
+
+Вывод данных из объекта где ключ - строка:
+const userInfo = {
+    name : 'Bob',
+    age : '18',
+    flat : 'yes',
+    'My car': true
+};
+
+console.log(userInfo["My car"]);
+
+Вывод данных объект в объекте:
+let user = {
+    name : 'Bob',
+    age : '18',
+    flat : 'yes',
+    address : {
+        city : 'Berlin',
+        country : 'Germany'
+    }
+};
+
+console.log(user.adress.country);
+```
+
+### Обход цикла методом for in
+
+```js
+const userData = {
+    name : 'Bob',
+    age : '18',
+    flat : 'yes'
+};
+```
+`index` - вывод ключей,  userData[index] - вывод значений
+
+```js
+for (let index in userData){
+   console.log(index , userData[index]);
+};
+```
+
+### Методы объекта и this
+
+Пример использования ключевого слова `this`:
+
+```js
+const person = {
+    name : 'Bob',
+    age : '18',
+    color : function(){
+        console.log(this.name);
+    }
+};
+
+person.color();
+```
