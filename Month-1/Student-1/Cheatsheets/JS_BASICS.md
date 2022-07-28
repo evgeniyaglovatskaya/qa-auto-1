@@ -45,24 +45,24 @@ console.log(name); // 'Stas' (значение переменной name) ото
 
 ```js
 string - тип string - строка (слово, фраза, предложение, абзац, любой текст)
-let cat = 'Iko'; //строка всегда берется в кавычки 
+let cat = 'Iko'; // строка всегда берется в кавычки 
 ```
 
 ```js
 number  - тип number число (если нет кавычек)
-let age = 5; //число без кавычек
+let age = 5; // число без кавычек
 age = '5'; // cтрока c числом внутри
 ```
 
 ```js
 boolean - Булевые значения (логические: true/false)
-let isCold = true;// True  - истина
-isCold = false;// False - Ложь
+let isCold = true; // True  - истина
+isCold = false; // False - Ложь
 ```
 
 ### Значение `null`
 ```js
-let forest = null;// "Ничего", "Пусто" или "Значение не известно"
+let forest = null; // "Ничего", "Пусто" или "Значение не известно"
 ```
 
 ### Значение `undefined`
