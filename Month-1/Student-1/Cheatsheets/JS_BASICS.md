@@ -335,18 +335,15 @@ for (let i = 0; i < allGermanCars.length; i++) {
 
 ### Обход массива циклом for (of)
 
-const allBritishCars = ['Jaguar', 'ROLLS-ROYCE', 'ASTON MARTIN', 'Bentley', 'Land Rover'];
-
-
 Запись с массива в переменную item: 
 
 ```js
+const allItalianCars = ['Pagani', 'Mazzanti', 'Ferrari', 'Lamborghini', 'Maserati']; 
 for (let item of allBritishCars){
     console.log(item);
 }
-
-const allItalianCars = ['Pagani', 'Mazzanti', 'Ferrari', 'Lamborghini', 'Maserati']; // Перебор массива с условием
 ```
+
 Пример - функции которая проверяет и возвращает определенное значение массива
 
 ```js
