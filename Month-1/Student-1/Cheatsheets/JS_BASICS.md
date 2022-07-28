@@ -1,6 +1,6 @@
 # JavaScript Basics
 
-# Navigation in cheetsheet
+## Navigation in cheetsheet
 [Занятие 1 - Переменные и типы данных](#занятие-1---переменные-и-типы-данных).
 
 ## Занятие 1 - Переменные и типы данных
