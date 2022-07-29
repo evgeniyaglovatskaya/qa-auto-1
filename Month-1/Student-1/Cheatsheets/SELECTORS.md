@@ -18,7 +18,7 @@
 
 Пример xpath
 
-``js
+```js
 //div[@class='g']//a
 ```
 Пример Css
@@ -68,6 +68,7 @@
 document.querySelectorAll(css-locator)
 document.querySelectorAll('.popUp-form-input-wrap'); // Возвращает все элементы внутри elem, удовлетворяющие данному CSS-селектору.
 ```
+
 ![Browser devTool Console](./img/consoleTabSearch.png)
 
 ```js
@@ -77,6 +78,7 @@ document.querySelector('.close-eye'); // Возвращает первый эл�
 
 `Browser devTool Elements`
 Также можно найти элемент через поиск во вкладке консоли браузера Elements
+
 ![Browser devTool Elements](./img/elementTabSearch.png)
 
 ### Предикаты XPath
