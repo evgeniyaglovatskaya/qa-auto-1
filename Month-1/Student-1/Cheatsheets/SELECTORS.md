@@ -1,6 +1,6 @@
 # Selectors
 
-## Navigation in cheetsheet
+## Navigation in cheatsheet
 [Занятие 6 - локаторы](#занятие-6---локаторы)
 
 [Занятие 7 - локаторы CSS](#занятие-7---локаторы-css)
